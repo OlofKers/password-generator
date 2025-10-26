@@ -1,6 +1,21 @@
+html{
+  height: 100%;
+  margin: 0;
+}
+
 body {
     color: #EEE;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
 
+#content {
+    background-color: #1F2937;
+    height: 550px;
+    width: 550px;
+    margin-top: 200px;
 }
 #password-text {
     font-weight: bold;
