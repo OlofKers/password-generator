@@ -57,7 +57,7 @@ button {
 }
 .password-box {
     text-align: center;
-    font-size: 16;
+    font-size: 80%;
     line-height: 32px;
     width: 180px;
     height: 32px;
@@ -67,4 +67,43 @@ button {
     border-radius: 6px;
     margin: 0px;
     color: #55F991;
+}
+
+#extras {
+    text-align: center;
+}
+.slider {
+    margin: 35px 0px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 212px;
+    height: 5px;
+    background: #273549;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 5px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    border: none;
+    background: #4ADF86;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 50%;
+    background: #4ADF86;
+    cursor: pointer;
 }
