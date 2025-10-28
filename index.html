@@ -13,8 +13,8 @@
             <button id="password-generator" onclick="displayPassword();">Generate passwords</button>
             <div class="seperator"> </div>
             <div id="password-section">
-                <p class="password-box" id="password-box1"></p>
-                <p class="password-box" id="password-box2"></p>
+                <p onclick="copyToClipboard(this)" class="password-box" id="password-box1"></p> <!--copyToClipboard(this) assigns the clicked element to the required (element) variable for the copyToClipboard function (very cool)-->
+                <p onclick="copyToClipboard(this)" class="password-box" id="password-box2"></p>
             </div>
             <div id="extras">
                 <p id="char-amount">Amount of characters in password:</p>
