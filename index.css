@@ -4,12 +4,17 @@ html{
 }
 
 body {
-    color: #EEE;
+    color: #D5D4D8;
     background-image: url("./images/background-dark.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
     font-family: "Karla", sans-serif;
+}
+
+body.lightmode {
+color: #6B7280;
+background-image: url("./images/background.jpg");
 }
 
 #title {
@@ -30,12 +35,16 @@ body {
     margin: 35px 0px;
 }
 
+.seperator.lightmode {
+    color: #D5D4D8;
+}
+
 
 button {
     margin-top: 51px;
     padding: 9px 18px;
     background-color: #10B981;
-    color: #EEE;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -44,12 +53,24 @@ button {
     color: #4ADF86;
 }
 
+#white-text {
+    color: white;
+}
+
+#white-text.lightmode {
+    color: #2B283A;
+}
+
 #content {
     background-color: #1F2937;
     padding: 115px 52px;
     height: 320px;
     width: 446px;
     margin-top: 200px;
+}
+
+#content.lightmode {
+    background-color: #EEE;
 }
 
 #password-section {
@@ -69,6 +90,7 @@ button {
     margin: 0px;
     color: #55F991;
     cursor: pointer;
+    user-select: none;
 }
 
 .password-box.clicked {
@@ -81,10 +103,12 @@ button {
 
 
 #extras {
-    text-align: center;
+    display: flex;
+    font-size: 12px;
+
 }
 .slider {
-    margin: 35px 0px;
+    margin: 5px 0px;
     -webkit-appearance: none;
     appearance: none;
     width: 212px;
@@ -97,6 +121,10 @@ button {
     transition: opacity .2s;
 }
 
+.slider.lightmode {
+    background: #D5D4D8;
+}
+
 .slider:hover {
     opacity: 1;
 }
@@ -106,7 +134,7 @@ button {
     appearance: none;
     border-radius: 50%;
     border: none;
-    background: #4ADF86;
+    background: #10B981;
     cursor: pointer;
 }
 
@@ -115,6 +143,22 @@ button {
     appearance: none;
     border: none;
     border-radius: 50%;
-    background: #4ADF86;
+    background: #10B981;
     cursor: pointer;
+}
+
+#switches {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 8px 25px;
+}
+
+.switch-container {
+    display: flex;
+    line-height: 0px;
+}
+
+.checkbox:checked {
+    accent-color: #10B981;
 }
