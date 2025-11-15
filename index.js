@@ -65,18 +65,25 @@ function copyToClipboard(element) {
 
 function toggleLightMode() {
 // Select all relevant elements
-const body = document.querySelector('body');
-const separator = document.querySelector('.seperator');
-const whiteText = document.querySelector('#white-text');
-const content = document.querySelector('#content');
-const slider = document.querySelector('.slider');
+const body = document.querySelector('body')
+const separator = document.querySelector('.seperator')
+const whiteText = document.querySelector('#white-text')
+const content = document.querySelector('#content')
+const slider = document.querySelector('.slider')
 
 // Toggle light mode classes
-body.classList.toggle('lightmode');
-separator?.classList.toggle('lightmode');
-whiteText?.classList.toggle('lightmode');
-content?.classList.toggle('lightmode');
-slider?.classList.toggle('lightmode');
+body.classList.toggle('lightmode')
+separator?.classList.toggle('lightmode')
+whiteText?.classList.toggle('lightmode')
+content?.classList.toggle('lightmode')
+slider?.classList.toggle('lightmode')
 }
-// body, .seperator, #white-text, #content, .slider
-// console.log(generatePassword())
+
+
+tippy('.password-box', {
+    trigger: 'click',
+    content: 'Copied!',
+    animation: 'fade',
+    arrow: true,
+    duration: 350,
+});
